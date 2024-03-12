@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(fondoBusqueda.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color:transparent;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #6e6c6b;/*grosor-stilo y color borde*/
+    border-radius: 15px; /*redondear esquinas*/transition: transform 0.5s ease-in-out; /* Transición para la animación de rotación */
+    box-shadow: 10px 15px 40px #fbe9e7; /*Sobreado alrededor*/ 
+}
+h1 {
+    color: #f3f3f3;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+.container.rotate {
+    transform: rotate(360deg); /* Rotación completa */
+}
+
+input {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    background: linear-gradient(to right, #2c3e50, #4d6275); /* Gradiente del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    overflow: hidden;
+    position: relative;         
+}
+
+button:hover {
+    background: linear-gradient(to right, #576b7e, #788a9e); /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Escala ligeramente al hacer hover */
+}
+.icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#container {
+    transform-origin: center; /* El punto de origen de la rotación es el centro del contenedor */
+}
+p {
+    color: #f3f3f3;  
+}
